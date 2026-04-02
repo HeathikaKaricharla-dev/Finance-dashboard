@@ -53,3 +53,10 @@ npm run dev
 * Export functionality
 * Add transaction modal
 
+## 📷 Screenshots
+
+### Viewer Mode (Dark)
+![Viewer Mode](./screenshots/viewer-dark.png)
+### Admin Mode (Dark)
+![Admin Mode](./screenshots/admin-dark.png)
+
