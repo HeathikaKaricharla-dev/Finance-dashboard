@@ -26,7 +26,7 @@ A clean and interactive finance dashboard built using React and Tailwind CSS to 
 
 ## Setup Instructions
 ```bash
-git clone https://github.com/HeathikaKaricharla-dev/finance-dashboard.git
+git clone https://github.com/HeathikaKaricharla-dev/Finance-dashboard.git
 cd finance-dashboard
 npm install
 npm run dev
