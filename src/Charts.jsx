@@ -8,7 +8,7 @@ import {
 export default function Charts() {
   const { transactions } = useContext(TransactionContext);
 
-  // 📊 Monthly data (for line chart)
+  //Monthly data (for line chart)
   const monthlyData = {};
   transactions.forEach(t => {
     const month = t.date.slice(0, 7);
@@ -21,7 +21,7 @@ export default function Charts() {
 
   const lineData = Object.values(monthlyData);
 
-  // 🥧 Category data (for pie chart)
+  //Category data (for pie chart)
   const categoryTotals = {};
   transactions.forEach(t => {
     if (t.type === "expense") {
@@ -40,7 +40,7 @@ export default function Charts() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
-      {/* 📈 Line Chart */}
+      {/* Line Chart */}
       <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
         <h2 className="text-lg font-bold mb-4 text-gray-800 dark:text-gray-100">
           Monthly Income vs Expenses
@@ -56,7 +56,7 @@ export default function Charts() {
         </ResponsiveContainer>
       </div>
 
-      {/* 🥧 Pie Chart */}
+      {/* Pie Chart */}
       <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
         <h2 className="text-lg font-bold mb-4 text-gray-800 dark:text-gray-100">
           Expense Breakdown
